@@ -22,25 +22,28 @@ class MyApp extends StatelessWidget {
         designSize: const Size(375, 812),
         builder: (context, child) {
           return MaterialApp(
-            title: 'Flutter Demo',
+            title: 'Todolist',
             theme: ThemeData(
               colorScheme: ColorScheme.fromSeed(
                 seedColor: AppColors.primary,
+                primary: AppColors.primary,
               ),
               dividerTheme: const DividerThemeData(
                 thickness: 0.5,
                 color: Color(0xFFE0E5ED),
               ),
               inputDecorationTheme: InputDecorationTheme(
-                  hintStyle: AppStyles.style416.copyWith(
-                    color: AppColors.greyA9B,
-                  ),
-                  contentPadding: REdgeInsets.symmetric(
-                    horizontal: 24,
-                    vertical: 20,
-                  )),
+                hintStyle: AppStyles.style416.copyWith(
+                  color: AppColors.greyA9B,
+                ),
+                contentPadding: REdgeInsets.symmetric(
+                  horizontal: 24,
+                  vertical: 20,
+                ),
+              ),
               useMaterial3: false,
               fontFamily: FontFamily.sfprodisplay,
+              textTheme: const TextTheme(),
             ),
             debugShowCheckedModeBanner: false,
             home: const RootPage(),

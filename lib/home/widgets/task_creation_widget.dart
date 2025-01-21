@@ -12,7 +12,7 @@ class TaskCreationWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final date = DateFormat('EEE dd MMM yyyy').format(DateTime.now());
     return Container(
-      height: 148.h,
+      height: 156.h,
       width: 327.w,
       clipBehavior: Clip.hardEdge,
       decoration: BoxDecoration(
@@ -88,7 +88,7 @@ class TaskCreationWidget extends StatelessWidget {
                       style: AppStyles.syle412.copyWith(color: AppColors.grey767),
                     ),
                   ],
-                )
+                ),
               ],
             ),
           ),
