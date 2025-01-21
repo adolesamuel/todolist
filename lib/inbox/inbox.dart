@@ -16,6 +16,7 @@ class InboxWidget extends StatelessWidget {
         foregroundColor: const Color(0xFF1D3066),
         elevation: 0,
         title: const Text('Inbox'),
+        centerTitle: true,
         leading: const BackButton(),
         actions: [IconButton(onPressed: () {}, icon: Assets.searchNormal.svg())],
       ),
